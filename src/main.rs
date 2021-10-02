@@ -1,4 +1,4 @@
-use yates::canvas::*;
+use yates::nodegraph::*;
 use yew::prelude::*;
 
 enum Msg {
@@ -38,9 +38,7 @@ impl Component for Model {
     fn view(&self) -> Html {
         html! {
             <div>
-                <Canvas width=800 height=800>
-<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-                </Canvas>
+                <NodeGraph width=800 height=800 />
             </div>
         }
     }

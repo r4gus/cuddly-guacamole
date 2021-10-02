@@ -1,2 +1,2 @@
-pub mod canvas;
+pub mod nodegraph;
 pub mod node;
